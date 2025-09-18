@@ -2,10 +2,10 @@
 #include <array>
 
 template <std::size_t n>
-int countEven(std::array<int, n> arr){
+int countEven(const std::array<int, n> arr){
     int count=0;
-    for (auto& elem : arr) {
-        if(elem%2 ==0){
+    for (int  i = 0; i < arr.size(); i++) {
+        if(arr[i]%2 ==0){
             count++;
         }
     }
